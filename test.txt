@@ -1,0 +1,3 @@
+#### Test ####
+docker run --rm --network bridge-docker-1 byrnedo/alpine-curl https://myip.payungsakpk.xyz
+docker run --rm --network bridge-docker-2 byrnedo/alpine-curl https://myip.payungsakpk.xyz
