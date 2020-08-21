@@ -1,1 +1,4 @@
+#### NAT Rule ####
+iptables -t nat -A POSTROUTING -s 172.18.0.0/16 ! -o bridge-docker-1 -j SNAT --to-source <private_ip_primary>
 
+iptables -t nat -A POSTROUTING -s 172.19.0.0/16 ! -o bridge-docker-2 -j SNAT --to-source <private_ip_secondary>
