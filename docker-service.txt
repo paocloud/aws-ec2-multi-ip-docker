@@ -1,4 +1,7 @@
 #### Docker Service ####
 
-#### Add this line
+#### Export iptables rules into /etc/docker/iptables by
+- $ iptables-save > /etc/docker/iptables
+
+#### Add this line into Docker systemctl service file.
 ExecStartPre=/bin/sh -c 'iptables-restore < /etc/docker/iptables'
