@@ -1,0 +1,4 @@
+#### Docker Service ####
+
+#### Add this line
+ExecStartPre=/bin/sh -c 'iptables-restore < /etc/docker/iptables'
